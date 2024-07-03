@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import { ScreenResizeContextProvider } from "@/contexts/ScreenResize";
 import Footer from "@/components/Footer/Footer";
+import { HoverContextProvider } from "@/contexts/HoverEffect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,13 +15,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <ScreenResizeContextProvider>
-        <body className={inter.className}>
-          <Header />
-          {children}
-          <Footer/>
-        </body>
-      </ScreenResizeContextProvider>
+      <HoverContextProvider>
+        <ScreenResizeContextProvider>
+          <body className={inter.className}>
+            <Header />
+            {children}
+            <Footer />
+          </body>
+        </ScreenResizeContextProvider>
+      </HoverContextProvider>
     </html>
   );
 }
