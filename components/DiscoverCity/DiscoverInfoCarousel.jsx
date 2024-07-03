@@ -26,10 +26,10 @@ export default function DiscoverInfoCarousel() {
           {CityInfo.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pl-1 md:basis-1/2 lg:basis-[20%] basis-[50%] "
+              className="pl-1 lg:pl-5 md:pl-5  lg:basis-[20%] md:basis-[30%] basis-[50%] "
             >
               <div
-                className="mr-5 h-fit border rounded-md min-h-[15rem] flex items-center justify-center relative"
+                className="h-fit border rounded-md min-h-[15rem] flex items-center justify-center relative"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -64,8 +64,8 @@ export default function DiscoverInfoCarousel() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="absolute left-[-1.5rem] lg:left-[90%] lg:top-[80%] top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 border-none" />
-        <CarouselNext className="absolute right-[-1.5rem] lg:right-6  top-1/2 lg:top-[80%] transform -translate-y-1/2 bg-[#834343e1] p-2 rounded-full shadow-lg z-10" />
+        <CarouselPrevious className="absolute left-[-1.5rem]   top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 border-none" />
+        <CarouselNext className="absolute right-[-1.5rem]  top-1/2 transform -translate-y-1/2 bg-[#834343e1] p-2 rounded-full shadow-lg z-10 border-none" />
       </Carousel>
     </div>
   );
