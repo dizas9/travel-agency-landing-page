@@ -1,6 +1,7 @@
 import Discount from "@/components/Discount Section/Discount";
 import DiscoverCity from "@/components/DiscoverCity/DiscoverCity";
 import HeroSection from "@/components/Hero Section/HeroSection";
+import TrendingDestination from "@/components/Trending Section/TrendingDestination";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection/>
         <Discount/>
         <DiscoverCity/>
+        <TrendingDestination/>
       </div>
     </>
   );
