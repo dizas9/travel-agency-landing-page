@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Discount() {
   return (
-    <section className="bg-[#191e3b] h-fit p-5 rounded-2xl outline-2 outline-double flex flex-col md:flex-row items-center gap-2 md:gap-3">
+    <section className="bg-[#191e3b] h-fit p-5 rounded-2xl outline-2 outline-double flex flex-col md:flex-row items-center gap-2 md:gap-3 lg:mt-7">
       <div className="flex w-full items-start justify-evenly">
         <span className="w-[20%]">
           <Image src={"/images/icons/onekey.svg"} width={50} height={100} />

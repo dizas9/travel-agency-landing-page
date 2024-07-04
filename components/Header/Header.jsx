@@ -18,7 +18,7 @@ import { DropdownMenuDemo } from "./DropDownMenu";
 export default function Header() {
   const { screenSize } = useScreenResize();
   return (
-    <section className="mx-auto 2xl:max-w-7xl px-5 my-5 flex justify-between w-full items-center cursor-pointer ">
+    <section className="mx-auto 2xl:max-w-7xl px-5 m-0 py-5 flex justify-between w-full items-center cursor-pointer fixed left-0 right-0 top-0 bg-[#ffffffef] z-30 border-b border-b-[#a36b6b]">
       {/* logo */}
       <div className="flex gap-28">
         <Logo />

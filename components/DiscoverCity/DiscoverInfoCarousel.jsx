@@ -60,7 +60,7 @@ export default function DiscoverInfoCarousel() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="absolute left-[-1.5rem]   top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 -none" />
+        <CarouselPrevious className="absolute lg:left-[-0.5rem] left-[-1.5rem]   top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 -none" />
         <CarouselNext className="absolute right-[-1.5rem]  top-1/2 transform -translate-y-1/2 bg-[#834343e1] p-2 rounded-full shadow-lg z-10 border-none" />
       </Carousel>
     </div>

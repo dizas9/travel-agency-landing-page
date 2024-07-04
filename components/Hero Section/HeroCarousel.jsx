@@ -40,7 +40,7 @@ export default function HeroCarousel() {
 
       {/* Title */}
 
-      <div className=" absolute top-[60%] lg:top-[70%] left-[50%] md:left-[40%] lg:left-[35%] -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[60%] bg-[#d2c1c199] p-2 ">
+      <div className=" absolute top-[60%] md:top-[50%] left-[50%] md:left-[40%] lg:left-[35%] -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[60%] bg-[#d2c1c199] p-2 ">
         <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[White] lg:pb-1">
           The perfect Planning for your special trip
         </p>

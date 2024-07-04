@@ -9,10 +9,11 @@ export default function Home() {
   return (
     <>
       <div className="min-h-[50vh] 2xl:max-w-7xl mx-auto px-5 my-10  flex flex-col gap-7">
-        <HeroSection/>
-        <Discount/>
-        <DiscoverCity/>
-        <TrendingDestination/>
+        <HeroSection />
+        <Discount />
+        <DiscoverCity />
+        <TrendingDestination />
+        <hr  />
       </div>
     </>
   );
