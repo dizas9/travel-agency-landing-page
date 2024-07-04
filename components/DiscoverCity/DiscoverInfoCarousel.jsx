@@ -26,19 +26,15 @@ export default function DiscoverInfoCarousel() {
           {CityInfo.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pl-1 lg:pl-5 md:pl-5  lg:basis-[20%] md:basis-[30%] basis-[50%] "
+              className="pl-3 lg:pl-5 md:pl-5  lg:basis-[20%] md:basis-[30%] basis-[50%] "
             >
               <div
-                className="h-fit border rounded-md min-h-[15rem] flex items-center justify-center relative"
+                className="h-fit rounded-md min-h-[15rem] flex items-center justify-center relative"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
                 <Image
-                  className={
-                    hoverItem === index
-                      ? "flex items-center justify-center lg:h-[45vh] md:h-[30vh] h-[30vh] w-full lg:object-fill rounded-md transition-all duration-1000 ease-in-out hover:object-cover"
-                      : "flex items-center justify-center lg:h-[45vh] md:h-[30vh] h-[30vh] w-full lg:object-fill rounded-md "
-                  }
+                  className="flex items-center justify-center lg:h-[45vh] md:h-[30vh] h-[30vh] w-full lg:object-fill rounded-md transition-all duration-1000 ease-in-out hover:object-cover"
                   src={item.src}
                   width={6000}
                   height={200}
@@ -64,7 +60,7 @@ export default function DiscoverInfoCarousel() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="absolute left-[-1.5rem]   top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 border-none" />
+        <CarouselPrevious className="absolute left-[-1.5rem]   top-1/2 transform -translate-y-1/2 bg-[#270606e1] p-2 rounded-full shadow-lg z-10 -none" />
         <CarouselNext className="absolute right-[-1.5rem]  top-1/2 transform -translate-y-1/2 bg-[#834343e1] p-2 rounded-full shadow-lg z-10 border-none" />
       </Carousel>
     </div>
